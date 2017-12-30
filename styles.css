@@ -63,6 +63,11 @@ h1 {
     text-transform: capitalize;
 }
 
+#projekth1 {
+    width: 100%;
+    text-align: center;
+}
+
 h2 {
     font-weight: 400;
     font-size: 2em;
