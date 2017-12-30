@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1em;
+}
+
+body {
+    margin: 0;
+    font-family: "Dosis", sans-serif;
+    background-color: aliceblue;
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5vw;
+    background-color: azure;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 2em;
+}
+
+/***** NAVIGATION *****/
+
+header {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vw;
+    background-color: white;
+    width: 100%;
+}
+
+.navigation {}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+
+/***** HEADERE *****/
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5em;
+    padding: 0.3em;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+h2 {}
