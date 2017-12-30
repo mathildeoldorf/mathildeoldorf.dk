@@ -15,7 +15,7 @@ body {
 section {
     max-width: 800px;
     margin: 0 auto;
-    padding: 1.5vw;
+    padding: 11em 1.5em 1.5em 1.5em;
     background-color: azure;
 }
 
@@ -26,6 +26,10 @@ a {
 
 .hovedmenu a {
     padding: 2em 20px 2em 2em;
+}
+
+img {
+    width: 100%;
 }
 
 /***** NAVIGATION *****/
@@ -59,7 +63,11 @@ h1 {
     text-transform: capitalize;
 }
 
-h2 {}
+h2 {
+    font-weight: 400;
+    font-size: 2em;
+    padding: 0.5em 0;
+}
 
 h3 {}
 
@@ -68,6 +76,35 @@ h4 {
     font-size: 0.7em;
     padding: 0 0 0 20px;
 }
+
+/***** KONTAKT *****/
+
+#kontakt {
+    text-align: center;
+    padding: 1.5em;
+}
+
+/***** FOOTER *****/
+
+footer {
+    padding: 2em;
+    background-color: peachpuff;
+    text-align: center;
+}
+
+
+/**** PROJEKTER *****/
+
+#projekter {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projekt {
+    flex-basis: 250px;
+    padding: 0.5em;
+}
+
 
 /***** MEDIAQUIERIES *****/
 
