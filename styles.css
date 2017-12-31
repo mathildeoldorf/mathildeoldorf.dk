@@ -15,8 +15,10 @@ body {
 section {
     max-width: 800px;
     margin: 0 auto;
-    padding: 11em 1.5em 1.5em 1.5em;
+    padding: 8em 1.5em 1.5em 1.5em;
     background-color: azure;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 a {
@@ -30,6 +32,13 @@ a {
 
 img {
     width: 100%;
+    border-radius: 10px;
+}
+
+.column {
+    flex-basis: 350px;
+    flex-grow: 1;
+    padding: 1em;
 }
 
 /***** NAVIGATION *****/
@@ -63,15 +72,13 @@ h1 {
     text-transform: capitalize;
 }
 
-#projekth1 {
-    width: 100%;
-    text-align: center;
-}
-
 h2 {
     font-weight: 400;
     font-size: 2em;
     padding: 0.5em 0;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
 }
 
 h3 {}
@@ -85,8 +92,20 @@ h4 {
 /***** KONTAKT *****/
 
 #kontakt {
-    text-align: center;
+    justify-content: center;
     padding: 1.5em;
+    background-color: maroon;
+}
+
+.mail {
+    width: 15vw;
+    height: 15vw;
+    /*
+    border-radius: 30px;
+    border-style: solid;
+    border-color: white;
+*/
+    /*    text-align: center;*/
 }
 
 /***** FOOTER *****/
@@ -97,12 +116,44 @@ footer {
     text-align: center;
 }
 
+/***** FORSIDE *****/
+
+#preview {
+    justify-content: center;
+}
+
+#preview-container {
+    width: 50vw;
+    height: 50vw;
+    background-image: url(images/Macbook-Flat-Mockup.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/***** OM *****/
+
+/*
+#om {
+    background-image: url(images/Macbook-Flat-Mockup.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+*/
+
+/*
+.om {
+    color: white;
+}
+
+.om-tekst {
+    color: white;
+}
+*/
 
 /**** PROJEKTER *****/
 
 #projekter {
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .projekt {
@@ -110,6 +161,9 @@ footer {
     padding: 0.5em;
 }
 
+.projekt:hover {
+    opacity: 0.4;
+}
 
 /***** MEDIAQUIERIES *****/
 
