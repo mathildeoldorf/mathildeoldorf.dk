@@ -126,7 +126,7 @@ h3.projektnavn {
     font-size: 0.9em;
     padding-top: 0.1em;
     /*    text-transform: capitalize;*/
-    color: rgb(150, 70, 78);
+    color: #fff;
 }
 
 h3.underpunkt {
@@ -138,6 +138,25 @@ h4 {
     font-size: 0.7em;
     padding: 0 0 0 20px;
     color: #fff;
+}
+
+h4.underpunkt {
+    font-size: 1em;
+    font-weight: 500;
+    padding: 0.9em 0 0 0.9em;
+    color: rgb(150, 70, 78);
+    text-transform: uppercase;
+}
+
+h5 {
+    font-weight: 100;
+    font-size: 1em;
+    color: black;
+    padding: 0.9em 0 0 0.9em;
+}
+
+h5.underpunkt {
+    padding: 1em 0;
 }
 
 /*
@@ -211,6 +230,7 @@ p {
     flex-basis: 33%;
     flex-grow: 1;
     height: 100%;
+    width: 250px;
     margin: 0.5em;
     position: relative;
     transition: opacity .6s ease-in;
@@ -275,10 +295,31 @@ p {
     padding: 1em;
 }
 
+.flex_billeder {
+    flex-basis: 250px;
+    flex-grow: 1;
+    padding: 0.8em;
+    width: 1vw;
+}
+
+.flex_billeder2 {
+    flex-basis: 400px;
+    flex-grow: 1;
+    padding: 0.8em;
+    width: 1vw;
+}
+
 .projektbillede {
     width: 100%;
     padding: 1em;
 }
+
+.billede_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 
 /***** MEDIAQUIERIES *****/
 
@@ -315,6 +356,10 @@ p {
     .tekst {
         top: -60.6vw;
         height: 89.5%;
+    }
+
+    .flex_billeder {
+        flex-basis: 400px;
     }
 }
 
