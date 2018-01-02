@@ -35,6 +35,10 @@ img {
     border-radius: 10px;
 }
 
+.lille {
+    width: 50%;
+}
+
 .column {
     flex-basis: 350px;
     flex-grow: 1;
@@ -312,6 +316,7 @@ p {
 .projektbillede {
     width: 100%;
     padding: 1em;
+    text-align: center;
 }
 
 .billede_wrapper {
