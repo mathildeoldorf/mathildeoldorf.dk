@@ -15,7 +15,8 @@ body {
 section {
     max-width: 950px;
     margin: 0 auto;
-    padding-top: 8em;
+    padding-top: 15vw;
+    padding-bottom: 4vw;
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
@@ -96,7 +97,7 @@ footer {
 
 h1 {
     font-weight: 400;
-    font-size: 2.5em;
+    font-size: 5vw;
     padding: 0.3em 0.3em 0em 20px;
     margin: 0;
     text-transform: capitalize;
@@ -124,7 +125,7 @@ h3 {
     font-weight: 100;
     font-size: 1.3em;
     text-transform: uppercase;
-    padding: 25px;
+    padding-top: 50px;
 }
 
 h3.projektnavn {
@@ -142,7 +143,7 @@ h3.underpunkt {
 
 h4 {
     font-weight: 100;
-    font-size: 0.7em;
+    font-size: 1.5vw;
     padding: 0 0 0 20px;
     color: #fff;
 }
@@ -213,15 +214,7 @@ p {
     height: 500px;
 }
 
-/*
-#preview-container {
-    width: 50vw;
-    height: 50vw;
-    background-image: url(images/Macbook-Flat-Mockup.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-*/
+
 
 /***** OM *****/
 
@@ -284,7 +277,7 @@ p {
     color: #fff;
     text-align: center;
     width: 100%;
-    height: 100%;
+    height: 98%;
     border-radius: 10px;
     opacity: 0;
 
@@ -343,112 +336,63 @@ p {
 }
 
 
-/*** ANIMATION ***/
-
-.margin_nul {
-    margin-left: 0;
-}
 
 /***** MEDIAQUIERIES *****/
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:950px) {
     header {
         justify-content: center;
     }
-    section {
-        padding-top: 11em;
+
+    nav {
+        flex-basis: 500px;
     }
+
     .hovedmenu a {
         padding: 1em;
     }
 
 }
 
-@media screen and (max-width:650px) {
-    header {
-        justify-content: center;
-    }
 
-}
 
 /***** projekter.html *****/
 
-/*** Størrelse på projekt-container - iPhone ***/
+/*** Størrelse på projekt-container og størrelse på billeder samt hovedmenu - mobile-version ***/
 
 @media screen and (max-width:950px) {
+
+
 
     .projekt {
         width: 90vw;
     }
 
-    /*
-    .tekst {
-        top: -60.6vw;
-        height: 89.5%;
-    }
-*/
     .flex_billeder {
         flex-basis: 400px;
     }
-}
 
-
-/*** 2. hover tekst ***/
-
-/*
-@media screen and (max-width:700px) {
-    .tekst,
-    .overlay {
-        top: -60.6vw;
-        height: 89%;
+    h1 {
+        font-size: 7vw;
     }
-}
 
-@media screen and (max-width:650px) {
-    .tekst,
-    .overlay {
-        top: -60.6vw;
-        height: 88%;
+    h3 {
+        font-size: 10vw;
+        padding-top: 20vw;
     }
-}
 
-@media screen and (max-width:600px) {
-    .tekst,
-    .overlay {
-        top: -60.6vw;
-        height: 87%;
+    h3.projektnavn {
+        font-size: 5vw;
     }
-}
 
-@media screen and (max-width:550px) {
-    .tekst,
-    .overlay {
-        top: -60.9vw;
-        height: 86.2%;
+    h4 {
+        font-size: 2vw;
     }
-}
 
-@media screen and (max-width:500px) {
-    .tekst,
-    .overlay {
-        top: -60.9vw;
-        height: 85.2%;
+    .tekst {
+        height: 99%;
     }
-}
 
-@media screen and (max-width:450px) {
-    .tekst,
-    .overlay {
-        top: -60.9vw;
-        height: 84%;
-    }
-}
 
-@media screen and (max-width:400px) {
-    .tekst,
-    .overlay {
-        top: -61.2vw;
-        height: 83%;
-    }
+
 }
-*/

@@ -1,8 +1,8 @@
 //$(window).on("load", start);
 
 var width = 550;
-var animationSpeed = 1000;
-var pause = 2000;
+var animationSpeed = 1500;
+var pause = 4000;
 var currentSlide = 1;
 
 var $slider = $("#preview-menu");
