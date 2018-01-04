@@ -214,6 +214,10 @@ p {
     height: 500px;
 }
 
+.slide img {
+    border-radius: 0;
+}
+
 
 
 /***** OM *****/

@@ -1,7 +1,7 @@
 //$(window).on("load", start);
 
 var width = 550;
-var animationSpeed = 1500;
+var animationSpeed = 1800;
 var pause = 4000;
 var currentSlide = 1;
 
