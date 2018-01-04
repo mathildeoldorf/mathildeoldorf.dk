@@ -13,7 +13,7 @@ body {
 }
 
 section {
-    max-width: 800px;
+    max-width: 950px;
     margin: 0 auto;
     padding-top: 8em;
     background-color: #fff;
@@ -119,15 +119,18 @@ h2.projektnavn {
     color: rgb(150, 70, 78);
 }
 
+
 h3 {
     font-weight: 100;
     font-size: 1.3em;
     text-transform: uppercase;
+    padding: 25px;
 }
 
 h3.projektnavn {
     font-weight: 100;
     font-size: 0.9em;
+    /*    padding: 0;*/
     padding-top: 0.1em;
     /*    text-transform: capitalize;*/
     color: #fff;
@@ -152,6 +155,15 @@ h4.underpunkt {
     text-transform: uppercase;
 }
 
+h4.underpunkt_stilart {
+    font-size: 1em;
+    font-weight: 500;
+    padding: 0.9em 0 0 0.9em;
+    color: rgb(150, 70, 78);
+    text-transform: uppercase;
+    text-align: center;
+}
+
 h5 {
     font-weight: 100;
     font-size: 1em;
@@ -161,13 +173,18 @@ h5 {
 
 h5.underpunkt {
     padding: 1em 0;
+    text-transform: uppercase;
 }
 
-/*
-p {
-    padding: 1em;
+h5.link {
+    color: rgb(150, 70, 78);
+    text-transform: uppercase;
+    text-align: center;
 }
-*/
+
+p {
+    line-height: 30px;
+}
 
 /***** FORSIDE *****/
 
@@ -231,10 +248,8 @@ p {
 }
 
 .projekt {
-    flex-basis: 33%;
-    flex-grow: 1;
-    height: 100%;
-    width: 250px;
+    display: inline;
+    width: 220px;
     margin: 0.5em;
     position: relative;
     transition: opacity .6s ease-in;
@@ -244,6 +259,7 @@ p {
     opacity: 0.9;
 }
 
+/*
 .overlay {
     background: rgba(0, 0, 0, 0.5);
     position: relative;
@@ -252,6 +268,7 @@ p {
     top: -10.67em;
     border-radius: 10px;
 }
+*/
 
 /*
 
@@ -262,18 +279,19 @@ p {
 */
 
 .tekst {
-    display: flex;
+    display: inline;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
+    text-align: center;
     width: 100%;
-    height: 77%;
-    top: -10.67em;
+    height: 100%;
     border-radius: 10px;
     opacity: 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
 }
 
 .tekst:hover {
@@ -325,6 +343,11 @@ p {
 }
 
 
+/*** ANIMATION ***/
+
+.margin_nul {
+    margin-left: 0;
+}
 
 /***** MEDIAQUIERIES *****/
 
@@ -352,17 +375,18 @@ p {
 
 /*** Størrelse på projekt-container - iPhone ***/
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:950px) {
 
     .projekt {
         width: 90vw;
     }
 
+    /*
     .tekst {
         top: -60.6vw;
         height: 89.5%;
     }
-
+*/
     .flex_billeder {
         flex-basis: 400px;
     }
@@ -371,6 +395,7 @@ p {
 
 /*** 2. hover tekst ***/
 
+/*
 @media screen and (max-width:700px) {
     .tekst,
     .overlay {
@@ -426,3 +451,4 @@ p {
         height: 83%;
     }
 }
+*/

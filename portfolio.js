@@ -1,4 +1,4 @@
-$(window).on("load", start);
+//$(window).on("load", start);
 
 var width = 550;
 var animationSpeed = 1000;
@@ -9,46 +9,34 @@ var $slider = $("#preview-menu");
 var $slideContainer = $slider.find(".preview-slides");
 var $slides = $slideContainer.find(".slide");
 
-function start() {
-    console.log("Slideren slider");
-//        $slideContainer = setInterval(sliderSlider, 2000);
 
+setInterval(function () {
     sliderSlider();
-}
+}, pause);
 
 
 function sliderSlider() {
+    console.log("sliderSlider");
+    console.log("animationspeed er " + animationSpeed);
+    console.log("pause er" + pause)
     $($slideContainer).animate({
         "margin-left": "-=" + width
-    }, animationSpeed);
+    }, animationSpeed, reset);
 
-    if (currentSlide == $slides.length) {
-        currentSlide = 1;
-        $slideContainer.css("margin-left", 0);
-    }
 }
 
 
+function reset() {
 
-
-
-//    setInterval(function () {
-//            $slideContainer.animate({
-//                    "margin-left": "-=" + width
-//                }, animationSpeed, function () currentSlide++;
-//                if (currentSlide === $slides.length) {
-//                    currentSlide = 1;
-//                    $slideContainer.css("margin-left", 0);
-//                }
-//            });
-//    }, pause);
-//
-
-//
-//
-//});
-
-
+    currentSlide++;
+    if (currentSlide === $slides.length) {
+        console.log("currentSlide = length");
+        currentSlide = 1;
+        $slideContainer.css({
+            "margin-left": "0"
+        });
+    }
+}
 
 //SetInterval
 //animate margin left
