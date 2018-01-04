@@ -363,8 +363,32 @@ p {
 .hs-responsive-embed-youtube {
     position: relative;
     padding-bottom: 56.25%;
-    /*        16: 9 Aspect Ratio */
+    /*            16: 9 Aspect Ratio */
     padding-top: 25px;
+}
+
+#bert {
+    text-align: center;
+}
+
+#grafik_redesign {
+    background-color: rgba(150, 70, 78, 0.5);
+    margin: 4vw;
+}
+
+#grafik1,
+#grafik2,
+#grafik3,
+#grafik4,
+#grafik5,
+#grafik6,
+#grafik7,
+#grafik8 {
+    align-self: flex-end;
+}
+
+#layoutdiagram_redesign {
+    flex-basis: 100px;
 }
 
 /***** MEDIAQUIERIES ****
