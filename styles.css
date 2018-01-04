@@ -312,6 +312,7 @@ p {
 
 .billede {
     padding: 1em;
+    text-align: center;
 }
 
 .flex_billeder {
@@ -339,7 +340,12 @@ p {
     flex-wrap: wrap;
 }
 
+/* ANIMATION */
 
+#pindsvin,
+#regnorm {
+    transform: rotate(90deg);
+}
 
 /***** MEDIAQUIERIES *****/
 
@@ -356,6 +362,10 @@ p {
         padding: 1em;
     }
 
+    section {
+        padding-top: 25vw;
+    }
+
 }
 
 
@@ -365,8 +375,6 @@ p {
 /*** Størrelse på projekt-container og størrelse på billeder samt hovedmenu - mobile-version ***/
 
 @media screen and (max-width:950px) {
-
-
 
     .projekt {
         width: 90vw;
@@ -386,6 +394,10 @@ p {
     }
 
     h3.projektnavn {
+        font-size: 5vw;
+    }
+
+    h3.underpunkt {
         font-size: 5vw;
     }
 
