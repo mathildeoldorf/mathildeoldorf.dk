@@ -40,6 +40,16 @@ img {
     width: 50%;
 }
 
+/*
+.lille#link:hover {
+    opacity: 0.6;
+}
+*/
+
+#link:hover {
+    opacity: 0.6;
+}
+
 .column {
     flex-basis: 350px;
     flex-grow: 1;
@@ -123,7 +133,7 @@ h2.projektnavn {
 
 h3 {
     font-weight: 100;
-    font-size: 1.3em;
+    font-size: 2.5em;
     text-transform: uppercase;
     padding-top: 50px;
 }
@@ -149,9 +159,9 @@ h4 {
 }
 
 h4.underpunkt {
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 500;
-    padding: 0.9em 0 0 0.9em;
+    padding: 2.5em 0 0 1em;
     color: rgb(150, 70, 78);
     text-transform: uppercase;
 }
@@ -165,11 +175,33 @@ h4.underpunkt_stilart {
     text-align: center;
 }
 
+h4.link {
+    font-size: 1.5vw;
+    font-weight: 500;
+    padding: 10px;
+    background-color: rgba(150, 70, 78, 0.7);
+    border-radius: 30px;
+    border-style: solid;
+    border-color: rgb(150, 70, 78);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h4.link:hover {
+    opacity: 0.6;
+}
+
 h5 {
     font-weight: 100;
     font-size: 1em;
     color: black;
     padding: 0.9em 0 0 0.9em;
+}
+
+h5.nav {
+    color: #fff;
+    padding: 0;
+    font-size: 2vw;
 }
 
 h5.underpunkt {
@@ -391,7 +423,7 @@ p {
     flex-basis: 100px;
 }
 
-/***** MEDIAQUIERIES ****
+/***** MEDIAQUIERIES ****/
 
 @media screen and (max-width:950px) {
     header {
@@ -400,6 +432,7 @@ p {
 
     nav {
         flex-basis: 500px;
+        justify-content: center;
     }
 
     .hovedmenu a {
@@ -435,6 +468,7 @@ p {
     h3 {
         font-size: 10vw;
         padding-top: 20vw;
+
     }
 
     h3.projektnavn {
@@ -446,7 +480,24 @@ p {
     }
 
     h4 {
-        font-size: 2vw;
+        font-size: 5vw;
+    }
+
+    h4.underpunkt {
+        font-size: 3vw;
+    }
+
+    h4.link {
+        font-size: 4vw;
+
+    }
+
+    h5.underpunkt {
+        font-size: 2.5vw;
+    }
+
+    h5.nav {
+        font-size: 2.5vw;
     }
 
     .tekst {
