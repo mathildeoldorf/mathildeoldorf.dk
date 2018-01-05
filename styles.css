@@ -10,10 +10,6 @@ html {
 body {
     font-family: "Dosis", sans-serif;
     background-image: url(images/notebook-2672549_1920.jpg);
-    /*    background-image: url(images/pexels-photo-414691.jpeg);*/
-    /*    background-image: url(images/pexels-photo-733857.jpeg);*/
-    /*    background-image: url(images/table-wood-record-notebook-163031.jpeg);*/
-    /*    background-image: url(images/wrinkled-crumpled-paper-1196278.jpg);*/
     /*    background-color: rgba(221, 219, 219, 1);*/
 }
 
@@ -22,7 +18,6 @@ section {
     margin: 0vw auto 5vw auto;
     padding-top: 15vw;
     padding-bottom: 4vw;
-    /*    background-color: rgba(232, 212, 212, 0.8);*/
     display: flex;
     flex-wrap: wrap;
 }
@@ -45,12 +40,6 @@ img {
     width: 50%;
 }
 
-/*
-.lille#link:hover {
-    opacity: 0.6;
-}
-*/
-
 #link:hover {
     opacity: 0.6;
 }
@@ -69,8 +58,8 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw;
-    background-color: rgba(150, 70, 78, 0.7);
+    padding: 1.5vw;
+    background-color: rgba(150, 70, 78, 1);
     width: 100%;
     z-index: 1;
 }
@@ -126,7 +115,6 @@ h2 {
     text-align: center;
     width: 100%;
     text-transform: uppercase;
-    color: #fff;
 }
 
 h2.projektnavn {
@@ -233,29 +221,6 @@ p {
     justify-content: center;
 }
 
-/*
-#preview-menu {
-    width: 550px;
-    height: 350px;
-    overflow: hidden;
-}
-
-.preview-slides {
-    display: block;
-    width: 6000px;
-        height: 700px;
-    margin: 0;
-    padding: 0;
-}
-
-.slide {
-    float: left;
-    list-style-type: none;
-    width: 550px;
-    height: 500px;
-}
-*/
-
 #preview-menu {
     width: 800px;
     height: 500px;
@@ -265,6 +230,7 @@ p {
 .preview-slides {
     display: block;
     width: 8000px;
+    /*    height: 501px;*/
     margin: 0;
     padding: 0;
 }
@@ -290,11 +256,9 @@ p {
     background-size: 100%;
     background-repeat: no-repeat;
 }
-
 .om {
     color: white;
 }
-
 .om-tekst {
     color: white;
 }
@@ -347,8 +311,7 @@ p {
 .introduktion,
 .proces,
 .resultat,
-.evaluering,
-    {
+.evaluering {
     display: block;
     padding: 0;
     background-color: rgba(232, 212, 212, 0.8);
@@ -495,7 +458,7 @@ p {
         font-size: 5vw;
         padding: 0;
     }
-    ;
+
 
     h3,
     h3.emne {
@@ -506,6 +469,7 @@ p {
 
     h3.projektnavn {
         font-size: 5vw;
+        padding: 0;
     }
 
     h3.underpunkt {
