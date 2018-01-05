@@ -9,16 +9,22 @@ html {
 
 body {
     font-family: "Dosis", sans-serif;
-    background-image: url();
+    background-image: url(images/notebook-2672549_1920.jpg);
+    /*    background-image: url(images/pexels-photo-414691.jpeg);*/
+    /*    background-image: url(images/pexels-photo-733857.jpeg);*/
+    /*    background-image: url(images/table-wood-record-notebook-163031.jpeg);*/
+    /*    background-image: url(images/wrinkled-crumpled-paper-1196278.jpg);*/
+    background-size: cover;
     /*    background-color: rgba(221, 219, 219, 1);*/
 }
 
 section {
     max-width: 950px;
-    margin: 0 auto;
+    margin: 0vw auto 5vw auto;
     padding-top: 15vw;
     padding-bottom: 4vw;
-    background-color: #fff;
+
+    background-color: rgba(232, 212, 212, 0.8);
     display: flex;
     flex-wrap: wrap;
 }
@@ -65,7 +71,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5vw;
+    padding: 1vw;
     background-color: rgba(150, 70, 78, 1);
     width: 100%;
     z-index: 1;
@@ -83,7 +89,7 @@ nav {
 #kontakt {
     justify-content: center;
     padding: 1.5em;
-    background-color: rgba(150, 70, 78, 1);
+    background-color: rgba(150, 70, 78, 0.7);
     color: #fff;
 }
 
@@ -96,7 +102,7 @@ nav {
 
 footer {
     padding: 2em;
-    background-color: rgba(150, 70, 78, 0.7);
+    /*    background-color: rgba(150, 70, 78, 0.7);*/
     text-align: center;
 }
 
@@ -226,16 +232,17 @@ p {
     justify-content: center;
 }
 
+/*
 #preview-menu {
     width: 550px;
-    height: 500px;
+    height: 350px;
     overflow: hidden;
 }
 
 .preview-slides {
     display: block;
     width: 6000px;
-    height: 501px;
+        height: 700px;
     margin: 0;
     padding: 0;
 }
@@ -244,6 +251,27 @@ p {
     float: left;
     list-style-type: none;
     width: 550px;
+    height: 500px;
+}
+*/
+
+#preview-menu {
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.preview-slides {
+    display: block;
+    width: 8000px;
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    float: left;
+    list-style-type: none;
+    width: 800px;
     height: 500px;
 }
 
