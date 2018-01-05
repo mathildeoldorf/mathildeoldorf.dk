@@ -9,7 +9,8 @@ html {
 
 body {
     font-family: "Dosis", sans-serif;
-    background-color: rgba(221, 219, 219, 1);
+    background-image: url();
+    /*    background-color: rgba(221, 219, 219, 1);*/
 }
 
 section {
