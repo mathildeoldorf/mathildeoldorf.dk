@@ -9,20 +9,16 @@ html {
 
 body {
     font-family: "Dosis", sans-serif;
-    background-image: url(images/notebook-2672549_1920.jpg);
-    /*    background-image: url(images/pexels-photo-414691.jpeg);*/
-    /*    background-image: url(images/pexels-photo-733857.jpeg);*/
-    /*    background-image: url(images/table-wood-record-notebook-163031.jpeg);*/
-    /*    background-image: url(images/wrinkled-crumpled-paper-1196278.jpg);*/
+    background-image: url();
     /*    background-color: rgba(221, 219, 219, 1);*/
 }
 
 section {
     max-width: 950px;
-    margin: 0vw auto 5vw auto;
+    margin: 0 auto;
     padding-top: 15vw;
     padding-bottom: 4vw;
-    /*    background-color: rgba(232, 212, 212, 0.8);*/
+    background-color: #fff;
     display: flex;
     flex-wrap: wrap;
 }
@@ -69,8 +65,8 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw;
-    background-color: rgba(150, 70, 78, 0.7);
+    padding: 1.5vw;
+    background-color: rgba(150, 70, 78, 1);
     width: 100%;
     z-index: 1;
 }
@@ -87,7 +83,7 @@ nav {
 #kontakt {
     justify-content: center;
     padding: 1.5em;
-    background-color: rgba(150, 70, 78, 0.7);
+    background-color: rgba(150, 70, 78, 1);
     color: #fff;
 }
 
@@ -100,7 +96,7 @@ nav {
 
 footer {
     padding: 2em;
-    /*    background-color: rgba(150, 70, 78, 0.7);*/
+    background-color: rgba(150, 70, 78, 0.7);
     text-align: center;
 }
 
@@ -121,12 +117,11 @@ h1 {
 
 h2 {
     font-weight: 400;
-    font-size: 3vw;
+    font-size: 2em;
     padding: 0.5em 0;
     text-align: center;
     width: 100%;
     text-transform: uppercase;
-    color: #fff;
 }
 
 h2.projektnavn {
@@ -144,14 +139,12 @@ h3 {
     padding-top: 50px;
 }
 
-h3.emne {
-    font-size: 2em;
-}
-
 h3.projektnavn {
     font-weight: 100;
     font-size: 0.9em;
+    /*    padding: 0;*/
     padding-top: 0.1em;
+    /*    text-transform: capitalize;*/
     color: #fff;
 }
 
@@ -233,17 +226,16 @@ p {
     justify-content: center;
 }
 
-/*
 #preview-menu {
     width: 550px;
-    height: 350px;
+    height: 500px;
     overflow: hidden;
 }
 
 .preview-slides {
     display: block;
     width: 6000px;
-        height: 700px;
+    height: 501px;
     margin: 0;
     padding: 0;
 }
@@ -252,27 +244,6 @@ p {
     float: left;
     list-style-type: none;
     width: 550px;
-    height: 500px;
-}
-*/
-
-#preview-menu {
-    width: 800px;
-    height: 500px;
-    overflow: hidden;
-}
-
-.preview-slides {
-    display: block;
-    width: 8000px;
-    margin: 0;
-    padding: 0;
-}
-
-.slide {
-    float: left;
-    list-style-type: none;
-    width: 800px;
     height: 500px;
 }
 
@@ -290,11 +261,9 @@ p {
     background-size: 100%;
     background-repeat: no-repeat;
 }
-
 .om {
     color: white;
 }
-
 .om-tekst {
     color: white;
 }
@@ -310,9 +279,6 @@ p {
     display: inline;
     width: 220px;
     margin: 0.5em;
-    border-style: solid;
-    border-color: rgba(232, 215, 212, 1);
-    border-radius: 10px;
     position: relative;
     transition: opacity .6s ease-in;
 }
@@ -321,9 +287,27 @@ p {
     opacity: 0.9;
 }
 
+/*
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    width: 100%;
+    height: 77%;
+    top: -10.67em;
+    border-radius: 10px;
+}
+*/
+
+/*
+.overlay:hover {
+        opacity: 0;
+        display: none;
+}
+*/
+
 .tekst {
     display: inline;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
     color: #fff;
     text-align: center;
     width: 100%;
@@ -347,17 +331,9 @@ p {
 .introduktion,
 .proces,
 .resultat,
-.evaluering,
-    {
+.evaluering {
     display: block;
     padding: 0;
-    background-color: rgba(232, 212, 212, 0.8);
-}
-
-#preview,
-#om,
-#projekter {
-    background-color: rgba(232, 212, 212, 0.8)
 }
 
 .column-wrapper {
@@ -487,18 +463,7 @@ p {
         font-size: 7vw;
     }
 
-    h2 {
-        font-size: 8vw;
-    }
-
-    h2.projektnavn {
-        font-size: 5vw;
-        padding: 0;
-    }
-    ;
-
-    h3,
-    h3.emne {
+    h3 {
         font-size: 10vw;
         padding-top: 20vw;
 
