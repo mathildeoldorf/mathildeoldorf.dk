@@ -1,6 +1,6 @@
 //$(window).on("load", start);
 
-var width = 800;
+var width = 600;
 var animationSpeed = 1800;
 var pause = 4000;
 var currentSlide = 1;

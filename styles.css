@@ -10,13 +10,14 @@ html {
 body {
     font-family: "Dosis", sans-serif;
     background-image: url(images/notebook-2672549_1920.jpg);
+    color: #fff;
     /*    background-color: rgba(221, 219, 219, 1);*/
 }
 
 section {
     max-width: 950px;
     margin: 0vw auto 5vw auto;
-    padding-top: 15vw;
+    padding-top: 12vw;
     padding-bottom: 4vw;
     display: flex;
     flex-wrap: wrap;
@@ -38,6 +39,7 @@ img {
 
 .lille {
     width: 50%;
+    align-items: center;
 }
 
 #link:hover {
@@ -59,7 +61,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.5vw;
-    background-color: rgba(150, 70, 78, 1);
+    background-color: rgba(150, 70, 78, 0.9);
     width: 100%;
     z-index: 1;
 }
@@ -110,16 +112,20 @@ h1 {
 
 h2 {
     font-weight: 400;
-    font-size: 3vw;
+    font-size: 4vw;
     padding: 0.5em 0;
     text-align: center;
     width: 100%;
     text-transform: uppercase;
 }
 
+h2.tema {
+    font-size: 6vw;
+}
+
 h2.projektnavn {
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 7vw;
     padding: 0 0 1em 0;
     color: rgb(150, 70, 78);
 }
@@ -144,7 +150,9 @@ h3.projektnavn {
 }
 
 h3.underpunkt {
-    padding: 0.7em 0 0 0.7em;
+    padding: 0.7em 0 0.7em 0.7em;
+    border-bottom: solid;
+    width: 100%;
 }
 
 h4 {
@@ -213,6 +221,7 @@ h5.link {
 
 p {
     line-height: 30px;
+    color: black;
 }
 
 /***** FORSIDE *****/
@@ -222,8 +231,8 @@ p {
 }
 
 #preview-menu {
-    width: 800px;
-    height: 500px;
+    width: 600px;
+    height: 400px;
     overflow: hidden;
 }
 
@@ -238,8 +247,8 @@ p {
 .slide {
     float: left;
     list-style-type: none;
-    width: 800px;
-    height: 500px;
+    width: 600px;
+    height: 400px;
 }
 
 .slide img {
