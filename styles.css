@@ -334,6 +334,7 @@ p {
 
 .column-wrapper {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .billede {
