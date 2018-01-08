@@ -12,7 +12,7 @@ var $slides = $slideContainer.find(".slide");
 
 var $tekst = $("#preview-tekst");
 
-var mq = window.matchMedia('all and (max-width: 700px)');
+var mq = window.matchMedia('all and (max-width: 600px)');
 
 
 setInterval(function () {

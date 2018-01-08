@@ -275,6 +275,10 @@ ul.cv {
     padding: 1vw 0 0 0;
 }
 
+ul.cv li {
+    color: white;
+}
+
 ul li {
     padding: 0.5vw;
     color: black;
@@ -680,6 +684,10 @@ ul li.cv {
         padding: 0;
     }
 
+    h2.velkommen {
+        font-size: 5vw;
+        padding-top: 10vw;
+    }
 
     h3,
     h3.emne {
