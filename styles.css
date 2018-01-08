@@ -8,10 +8,12 @@ html {
 }
 
 body {
-    font-family: "Dosis", sans-serif;
+    font-family: "Dosis",
+    sans-serif;
+
+    font-size: 1.2vw;
     background-image: url(images/notebook-2672549_1920.jpg);
     color: #fff;
-    /*    background-color: rgba(221, 219, 219, 1);*/
 }
 
 section {
@@ -42,14 +44,24 @@ img {
     align-items: center;
 }
 
-#link:hover {
+.lille2 {
+    width: 10vw;
+}
+
+.link:hover {
     opacity: 0.6;
 }
 
 .column {
     flex-basis: 350px;
     flex-grow: 1;
-    padding: 1em;
+    padding: 1vw;
+}
+
+.column_center {
+    flex-basis: 250px;
+    flex-grow: 1;
+    text-align: center;
 }
 
 /***** NAVIGATION *****/
@@ -123,6 +135,11 @@ h2.tema {
     font-size: 6vw;
 }
 
+h2.velkommen {
+    font-size: 3vw;
+    padding-bottom: 0;
+}
+
 h2.projektnavn {
     font-weight: 600;
     font-size: 7vw;
@@ -139,7 +156,7 @@ h3 {
 }
 
 h3.emne {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 h3.projektnavn {
@@ -160,6 +177,15 @@ h4 {
     font-size: 1.5vw;
     padding: 0 0 0 20px;
     color: #fff;
+    text-transform: uppercase;
+}
+
+h4.cv {
+    font-weight: 100;
+    font-size: 1.8vw;
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 h4.underpunkt {
@@ -173,7 +199,7 @@ h4.underpunkt {
 h4.underpunkt_stilart {
     font-size: 1em;
     font-weight: 500;
-    padding: 0.9em 0 0 0.9em;
+    padding: 0;
     color: rgb(150, 70, 78);
     text-transform: uppercase;
     text-align: center;
@@ -195,6 +221,13 @@ h4.link:hover {
     opacity: 0.6;
 }
 
+h4.test {
+    font-weight: 500;
+    padding: 1vw;
+    text-align: center;
+    color: rgb(150, 70, 78);
+}
+
 h5 {
     font-weight: 100;
     font-size: 1em;
@@ -211,6 +244,14 @@ h5.nav {
 h5.underpunkt {
     padding: 1em 0;
     text-transform: uppercase;
+    font-weight: 500;
+    color: rgb(150, 70, 78);
+}
+
+h5.underpunkt2 {
+    padding: 1em;
+    text-transform: uppercase;
+    color: rgb(150, 70, 78);
 }
 
 h5.link {
@@ -222,6 +263,25 @@ h5.link {
 p {
     line-height: 30px;
     color: black;
+    font-size: 1.2vw;
+}
+
+p.cv {
+    color: white;
+}
+
+ul.cv {
+    list-style-type: none;
+    padding: 1vw 0 0 0;
+}
+
+ul li {
+    padding: 0.5vw;
+    color: black;
+}
+
+ul li.cv {
+    padding: 0;
 }
 
 /***** FORSIDE *****/
@@ -239,7 +299,6 @@ p {
 .preview-slides {
     display: block;
     width: 8000px;
-    /*    height: 501px;*/
     margin: 0;
     padding: 0;
 }
@@ -255,9 +314,141 @@ p {
     border-radius: 0;
 }
 
+.slide img:hover {
+    opacity: 0.9;
+}
 
+
+.preview_tekst {
+    display: inline;
+    /*    background: rgba(0, 0, 0, 0.4);*/
+    color: rgb(150, 70, 78);
+    text-align: center;
+    width: 400px;
+    height: 270px;
+    border-radius: 10px;
+    /*    opacity: 0;*/
+    position: absolute;
+    top: 23vw;
+    left: 31.5vw;
+
+}
+
+.preview_tekst:hover {
+    opacity: 1;
+    transition: opacity .2s ease-in;
+}
 
 /***** OM *****/
+
+/* TIDSLINJE */
+
+/* Linjen */
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(150, 70, 78);
+    top: 0;
+    bottom: 0;
+    left: 25%;
+    margin-left: -3px;
+}
+
+/* Container til indhold */
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 75%;
+}
+
+/* Cirkler */
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: -16px;
+    background-color: rgb(232, 215, 212);
+    border: 4px solid rgb(150, 70, 78);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Container til højre */
+
+.right {
+    left: 25%;
+}
+
+/* Pile */
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: 5px solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgb(232, 215, 212) transparent transparent;
+}
+
+/* Indhold */
+
+.content {
+    padding: 20px 30px;
+    background-color: rgb(232, 215, 212);
+    position: relative;
+    border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+
+@media all and (max-width: 900px) {
+    /* linje til venstre */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* container */
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* pile */
+    .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent rgb(232, 215, 212) transparent transparent;
+    }
+
+    /* Cirkler */
+    .right::after {
+        left: 15px;
+    }
+
+    /* Flytter mod venstre */
+    .right {
+        left: 0%;
+    }
+}
 
 /*
 #om {
@@ -300,7 +491,7 @@ p {
     color: #fff;
     text-align: center;
     width: 100%;
-    height: 98%;
+    height: 100%;
     border-radius: 10px;
     opacity: 0;
 
@@ -320,7 +511,8 @@ p {
 .introduktion,
 .proces,
 .resultat,
-.evaluering {
+.evaluering,
+.kilder {
     display: block;
     padding: 0;
     background-color: rgba(232, 212, 212, 0.8);
@@ -328,7 +520,8 @@ p {
 
 #preview,
 #om,
-#projekter {
+#projekter,
+#kilder {
     background-color: rgba(232, 212, 212, 0.8)
 }
 
@@ -378,6 +571,12 @@ p {
     height: 38vw;
 }
 
+.skitse {
+    transform: rotate(90deg);
+    padding: 2vw;
+
+}
+
 /* VIDEO */
 
 .hs-responsive-embed-youtube iframe {
@@ -418,6 +617,14 @@ p {
     flex-basis: 100px;
 }
 
+.kildeliste {
+    text-transform: uppercase;
+}
+
+.kildeliste li {
+    color: white;
+}
+
 /***** MEDIAQUIERIES ****/
 
 @media screen and (max-width:950px) {
@@ -440,7 +647,7 @@ p {
 
 }
 
-
+/*** ANIMATIONER ***/
 
 /***** projekter.html *****/
 
@@ -462,6 +669,10 @@ p {
 
     h2 {
         font-size: 8vw;
+    }
+
+    h2.tema {
+        padding-top: 10vw;
     }
 
     h2.projektnavn {
@@ -495,7 +706,7 @@ p {
     }
 
     h4.link {
-        font-size: 4vw;
+        font-size: 3vw;
 
     }
 
@@ -511,6 +722,43 @@ p {
         height: 99%;
     }
 
+    body {
+        font-size: 1em;
+    }
 
 
+
+}
+
+
+@media screen and (max-width:899px) {
+    h4.cv {
+        font-size: 3vw;
+
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    #preview-menu {
+        width: 400px;
+        height: 300px;
+        overflow: hidden;
+    }
+
+    .preview-slides {
+        display: block;
+        width: 8000px;
+        /*    height: 501px;*/
+        margin: 0;
+        padding: 0;
+    }
+
+    .slide {
+        float: left;
+        list-style-type: none;
+        width: 400px;
+        height: 300px;
+    }
 }

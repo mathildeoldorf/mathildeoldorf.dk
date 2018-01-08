@@ -1,6 +1,7 @@
 //$(window).on("load", start);
 
 var width = 600;
+var widthLille = 400;
 var animationSpeed = 1800;
 var pause = 4000;
 var currentSlide = 1;
@@ -9,9 +10,20 @@ var $slider = $("#preview-menu");
 var $slideContainer = $slider.find(".preview-slides");
 var $slides = $slideContainer.find(".slide");
 
+var $tekst = $("#preview-tekst");
+
+var mq = window.matchMedia('all and (max-width: 700px)');
+
 
 setInterval(function () {
-    sliderSlider();
+
+    if (mq.matches) {
+        sliderSliderLille();
+    } else {
+        sliderSlider();
+    }
+
+
 }, pause);
 
 
@@ -38,40 +50,14 @@ function reset() {
     }
 }
 
-//SetInterval
-//animate margin left
-// IF: last slide - go to pos 1
-// listen for mouseenter and pause
-// resume på mouseleave
 
+/** MEDIA QUIERY **/
 
-
-//$(window).on("load", sidenErLoadet);
-//
-//
-//function sidenErLoadet() {
-//    console.log("Velkommen til Mathilde Oldorfs portfolio");
-
-
-
-
-// FORSØG PÅ EKSTRA OVERLAY TIL HOVER-FUNKTIONEN I PROJEKT-HTML
-
-//    $(".overlay").hover(overlayHidden);
-
-
-//function overlayHover() {
-//    console.log("Overlay hover er aktiv");
-//    $(".overlay").hover(overlayHidden);
-//}
-//
-//
-//function overlayHidden() {
-//    console.log("Overlay bliver usynligt");
-//    $(".overlay").css("display", "none");
-//}
-//
-////function overlaySynligt() {
-////    console.log("Overlay er synligt igen");
-////    $(".overlay").css("display", "inherit");
-////}
+function sliderSliderLille() {
+    console.log("sliderSliderLille");
+    console.log("animationspeed er " + animationSpeed);
+    console.log("pause er" + pause)
+    $($slideContainer).animate({
+        "margin-left": "-=" + widthLille
+    }, animationSpeed, reset);
+}
